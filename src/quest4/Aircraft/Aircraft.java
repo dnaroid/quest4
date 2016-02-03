@@ -6,16 +6,17 @@ public class Aircraft {
     private int id;
     private boolean isFly;
     private String target;
-    private Wing[] wings;
-    private Engine[] engines;
-//    private Chassis chassis;
+    private Wing leftWing;
+    private Wing rightWing;
+    private Engine engine;
+    private Chassis chassis;
 
     public Aircraft(int id){
         this.id = id;
-        wings[0] = new Wing(0);
-        wings[1] = new Wing(1);
-        engines[0] = new Engine(0);
-        engines[1] = new Engine(1);
+        leftWing = new Wing(0);
+        rightWing = new Wing(1);
+        engine = new Engine(0);
+        chassis = new Chassis(0);
     }
     
     public void fly(){
