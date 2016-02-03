@@ -2,10 +2,6 @@ package quest4;
 
 import quest4.Aircraft.Aircraft;
 
-/**
- *
- * @author buzz
- */
 public class Quest4 {
     public static void main(String[] args) {
         Aircraft aircraft = new Aircraft(1);
